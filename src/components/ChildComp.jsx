@@ -27,7 +27,7 @@ const ChildComp = () => {
       <>
         <input name="name" onChange={inputChangeHandler} />
         <input name="age" onChange={inputChangeHandler} />
-        <button onClick={() => console.log(user)}>trig</button>
+        <button onClick={() => console.log(user)}>click me!</button>
         <div>
           {[0, 1, 2, 3, 4, 5].map((item) => {
             return <div key={item}>{item}</div>; // Changed the content to display 'item'
