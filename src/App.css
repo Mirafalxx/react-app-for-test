@@ -1,7 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  background-color: #cccccc;
+  background-color: rgba(181, 181, 181, 0.7);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  gap: 15px;
+  padding-top: 40px;
+}
+
+.column {
+  border: 1px solid black;
+  width: calc(30% - 15px);
+  border-radius: 4px;
+  min-height: 20rem;
+  padding: 0.5rem;
+}
+
+.task {
+  background: white;
+  border-radius: 4px;
+  min-height: 3rem;
+  padding: 0.5rem;
+}
+
+.PLANNED {
+  background: rgb(67, 103, 245);
+}
+
+.ONGOING {
+  background: rgb(0, 255, 76);
+}
+.DONE {
+  background: rgb(253, 30, 90);
 }
